@@ -8,8 +8,8 @@ RUN apk update && apk upgrade && apk add --no-cache \
     bash
 
 COPY entrypoint.sh /entrypoint.sh
-COPY ipsec.conf /etc/ipsec.conf
-COPY ipsec.secrets /etc/ipsec.secrets
+COPY ipsec/ipsec.conf /etc/ipsec.conf
+COPY ipsec/ipsec.secrets /etc/ipsec.secrets
 
 RUN chmod +x /entrypoint.sh
 
