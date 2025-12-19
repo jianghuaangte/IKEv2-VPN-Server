@@ -1,4 +1,4 @@
-FROM alpine:3.20
+FROM alpine:edge
 
 RUN apk update && apk upgrade && apk add --no-cache \
     strongswan \
