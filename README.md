@@ -45,3 +45,8 @@ networks:
         ipv4_address: 172.21.0.20
     restart: unless-stopped
 ```
+
+手机等设置安装 pem 证书
+```shell
+docker exec -it myipsec cat /etc/swanctl/x509ca/caCert.pem
+```
